@@ -6,4 +6,5 @@
 </div>
 <div class="container">
   <app-beer-list [childBeerList]="masterBeerKegList"></app-beer-list>
+  <app-new-beer (sendBeer)="addNewBeer($event)"></app-new-beer>
 </div>

@@ -1,0 +1,14 @@
+<h1>New Beer</h1>
+<div>
+ <label>Enter Beer Name:</label>
+ <input #newName>
+ <br>
+ <label>Enter Price:</label>
+ <input #newPrice>
+ <br>
+ <label>Enter Alcohol Content:</label>
+ <input #newAlcoholContent>
+</div>
+<div>
+  <button (click)="submitForm(newName.value, newPrice.value, newAlcoholContent.value); newName.value=''; newPrice.value=''; newAlcoholContent.value='';">Add</button>
+</div>

@@ -14,5 +14,8 @@ export class AppComponent {
     new BeerKeg('Coors Light', 5, 5)
   ];
 
+  addNewBeer(newBeerKeg: BeerKeg) {
+    this.masterBeerKegList.push(newBeerKeg);
+  }
 
 }
