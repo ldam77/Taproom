@@ -1,20 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule }  from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
 import { BeerListComponent } from './beer-list/beer-list.component';
 import { NewBeerComponent } from './new-beer/new-beer.component';
+import { EditBeerComponent } from './edit-beer/edit-beer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     BeerListComponent,
-    NewBeerComponent
+    NewBeerComponent,
+    EditBeerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

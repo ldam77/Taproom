@@ -1,3 +1,4 @@
 <ul>
-  <li *ngFor="let currentBeer of childBeerList">{{ currentBeer.name }}, ${{ currentBeer.price }}, {{ currentBeer.alcoholContent }}% ABV</li>
+  <li *ngFor="let currentBeer of childBeerList">{{ currentBeer.name }}, ${{ currentBeer.price }}, {{ currentBeer.alcoholContent }}% ABV, Pints remaining: {{ currentBeer.capacity }} <button (click)="editButtonClicked(currentBeer)">Edit</button>
+  <button (click)="buyButtonClicked(currentBeer)">Buy</button></li>
 </ul>

@@ -14,8 +14,22 @@ export class AppComponent {
     new BeerKeg('Coors Light', 5, 5)
   ];
 
+  selectedBeerKeg: BeerKeg = null;
+
   addNewBeer(newBeerKeg: BeerKeg) {
     this.masterBeerKegList.push(newBeerKeg);
+  }
+
+  editBeer(clickedBeer) {
+    this.selectedBeerKeg = clickedBeer;
+  }
+
+  finishEditing() {
+    this.selectedBeerKeg = null;
+  }
+
+  buyBeer(clickedBeer: BeerKeg) {
+    clickedBeer.capacity--;
   }
 
 }

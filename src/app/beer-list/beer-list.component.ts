@@ -9,8 +9,14 @@ import { BeerKeg } from '../models/beerKeg.model';
 export class BeerListComponent {
   @Input() childBeerList: BeerKeg[];
   @Output() clickSender = new EventEmitter();
+  @Output() clickedBuy = new EventEmitter();
 
+  editButtonClicked(currentBeer: BeerKeg) {
+    this.clickSender.emit(currentBeer);
+  }
 
-
+  buyButtonClicked(currentBeer: BeerKeg) {
+    this.clickedBuy.emit(currentBeer);
+  }
 
 }
