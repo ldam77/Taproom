@@ -1,0 +1,10 @@
+.new-beer {
+  font-size: 20px;
+}
+
+button {
+  border-radius: 2em;
+  border-color: red;
+  padding: 1%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
