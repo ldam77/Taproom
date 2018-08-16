@@ -32,4 +32,8 @@ export class AppComponent {
     clickedBeer.capacity--;
   }
 
+  buyGrowler(clickedBeer: BeerKeg) {
+    clickedBeer.capacity-=2;
+  }
+
 }

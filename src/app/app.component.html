@@ -5,7 +5,7 @@
   </h1>
 </div>
 <div class="container">
-  <app-beer-list [childBeerList]="masterBeerKegList" (clickSender)="editBeer($event)" (clickedBuy)="buyBeer($event)"></app-beer-list>
+  <app-beer-list [childBeerList]="masterBeerKegList" (clickSender)="editBeer($event)" (clickedBuy)="buyBeer($event)" (clickedGrowler)="buyGrowler($event)"></app-beer-list>
 
   <app-new-beer (sendBeer)="addNewBeer($event)"></app-new-beer>
 

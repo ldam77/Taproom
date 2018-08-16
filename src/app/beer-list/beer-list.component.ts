@@ -10,6 +10,7 @@ export class BeerListComponent {
   @Input() childBeerList: BeerKeg[];
   @Output() clickSender = new EventEmitter();
   @Output() clickedBuy = new EventEmitter();
+  @Output() clickedGrowler = new EventEmitter();
 
   editButtonClicked(currentBeer: BeerKeg) {
     this.clickSender.emit(currentBeer);
@@ -17,6 +18,15 @@ export class BeerListComponent {
 
   buyButtonClicked(currentBeer: BeerKeg) {
     this.clickedBuy.emit(currentBeer);
+  }
+
+  growlerClicked(currentBeer: BeerKeg) {
+    this.clickedGrowler.emit(currentBeer);
+  }
+
+  largeGrowlerClicked(currentBeer: BeerKeg) {
+    this.growlerClicked(currentBeer);
+    this.growlerClicked(currentBeer);
   }
 
   alcoholContent(currentBeer:BeerKeg){
