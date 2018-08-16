@@ -9,9 +9,9 @@ import { BeerKeg } from './models/beerKeg.model';
 export class AppComponent {
 
   masterBeerKegList: BeerKeg[] = [
-    new BeerKeg('Budweiser', 5, 6),
-    new BeerKeg('Corona', 6, 6),
-    new BeerKeg('Coors Light', 5, 5)
+    new BeerKeg('Coors Light', 5, 4),
+    new BeerKeg('Blue Moon', 7, 6),
+    new BeerKeg('Hipster IPA', 15, 11)
   ];
 
   selectedBeerKeg: BeerKeg = null;

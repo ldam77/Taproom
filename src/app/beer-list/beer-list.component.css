@@ -17,3 +17,15 @@ button {
 .btn-buy {
   border-color: red;
 }
+
+.cheap-beer{
+  color: orange;
+}
+
+.good-beer{
+  color: green;
+}
+
+.expensive-beer{
+  color: blue;
+}

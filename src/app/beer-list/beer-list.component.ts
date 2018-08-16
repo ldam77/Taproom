@@ -18,9 +18,20 @@ export class BeerListComponent {
   buyButtonClicked(currentBeer: BeerKeg) {
     this.clickedBuy.emit(currentBeer);
   }
+
   lowKegLevel(currentBeer:BeerKeg){
     if(currentBeer.capacity<10){
       return "bg-danger";
+    }
+  }
+
+  priceColorCode(currentBeer:BeerKeg) {
+    if(currentBeer.price<=5){
+      return "cheap-beer";
+    } else if(currentBeer.price<=10) {
+      return "good-beer";
+    } else {
+      return "expensive-beer";
     }
   }
 

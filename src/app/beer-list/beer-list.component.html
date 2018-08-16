@@ -1,4 +1,4 @@
 <ul>
-  <li [class]="lowKegLevel(currentBeer)"*ngFor="let currentBeer of childBeerList"><span class="beer-name">{{ currentBeer.name }}</span>, ${{ currentBeer.price }}, {{ currentBeer.alcoholContent }}% ABV, Pints remaining: {{ currentBeer.capacity }} <button (click)="editButtonClicked(currentBeer)" class="btn-edit">Edit</button>
+  <li [class]="lowKegLevel(currentBeer)"*ngFor="let currentBeer of childBeerList"><span class="beer-name">{{ currentBeer.name }}</span>, <span [class]="priceColorCode(currentBeer)">${{ currentBeer.price }}</span>, {{ currentBeer.alcoholContent }}% ABV, Pints remaining: {{ currentBeer.capacity }} <button (click)="editButtonClicked(currentBeer)" class="btn-edit">Edit</button>
   <button class="btn-buy" (click)="buyButtonClicked(currentBeer)">Buy</button></li>
 </ul>
