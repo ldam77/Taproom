@@ -37,9 +37,9 @@ export class BeerListComponent {
     }
   }
 
-  filterByCapacity: string = "allBeer";
+  desiredFilter: string = "allBeer";
 
   onChange(optionFromMenu) {
-    this.filterByCapacity = optionFromMenu;
+    this.desiredFilter = optionFromMenu;
   }
 }

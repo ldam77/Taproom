@@ -1,9 +1,10 @@
 <select (change)="onChange($event.target.value)">
   <option value="allBeer" selected>All Beer</option>
   <option value="lowLevel">Less than 10 remaining</option>
+  <option value="lowPrice">Low Price</option>
 </select>
 
 <ul>
-  <li [class]="alcoholContent(currentBeer)"*ngFor="let currentBeer of childBeerList | capacity:filterByCapacity"><span class="beer-name">{{ currentBeer.name }}</span>, <span [class]="priceColorCode(currentBeer)">${{ currentBeer.price }}</span>, {{ currentBeer.alcoholContent }}% ABV, Pints remaining: {{ currentBeer.capacity }} <button (click)="editButtonClicked(currentBeer)" class="btn-edit">Edit</button>
+  <li [class]="alcoholContent(currentBeer)"*ngFor="let currentBeer of childBeerList | filter:desiredFilter"><span class="beer-name">{{ currentBeer.name }}</span>, <span [class]="priceColorCode(currentBeer)">${{ currentBeer.price }}</span>, {{ currentBeer.alcoholContent }}% ABV, Pints remaining: {{ currentBeer.capacity }} <button (click)="editButtonClicked(currentBeer)" class="btn-edit">Edit</button>
   <button class="btn-buy" (click)="buyButtonClicked(currentBeer)">Buy</button></li>
 </ul>

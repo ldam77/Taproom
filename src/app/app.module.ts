@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { BeerListComponent } from './beer-list/beer-list.component';
 import { NewBeerComponent } from './new-beer/new-beer.component';
 import { EditBeerComponent } from './edit-beer/edit-beer.component';
-import { CapacityPipe } from './capacity.pipe';
+import { FilterPipe } from './filter.pipe';
+
 
 
 
@@ -17,7 +18,7 @@ import { CapacityPipe } from './capacity.pipe';
     BeerListComponent,
     NewBeerComponent,
     EditBeerComponent,
-    CapacityPipe    
+    FilterPipe
   ],
   imports: [
     BrowserModule,
