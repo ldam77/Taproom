@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { BeerListComponent } from './beer-list/beer-list.component';
 import { NewBeerComponent } from './new-beer/new-beer.component';
 import { EditBeerComponent } from './edit-beer/edit-beer.component';
+import { CapacityPipe } from './capacity.pipe';
+
 
 
 @NgModule({
@@ -14,7 +16,8 @@ import { EditBeerComponent } from './edit-beer/edit-beer.component';
     AppComponent,
     BeerListComponent,
     NewBeerComponent,
-    EditBeerComponent
+    EditBeerComponent,
+    CapacityPipe    
   ],
   imports: [
     BrowserModule,

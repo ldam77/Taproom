@@ -19,8 +19,10 @@ export class BeerListComponent {
     this.clickedBuy.emit(currentBeer);
   }
 
-  lowKegLevel(currentBeer:BeerKeg){
-    if(currentBeer.capacity<10){
+  alcoholContent(currentBeer:BeerKeg){
+    if(currentBeer.alcoholContent<=5){
+      return "bg-success";
+    } else {
       return "bg-danger";
     }
   }
@@ -35,5 +37,9 @@ export class BeerListComponent {
     }
   }
 
+  filterByCapacity: string = "allBeer";
 
+  onChange(optionFromMenu) {
+    this.filterByCapacity = optionFromMenu;
+  }
 }
