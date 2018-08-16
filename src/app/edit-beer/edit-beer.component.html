@@ -1,11 +1,24 @@
 <div *ngIf="childSelectedBeerKeg">
-  <h3>{{childSelectedBeerKeg.name}}</h3>
-  <h3>Edit Name</h3>
-  <label>Enter Name :</label>
-  <input [(ngModel)]="childSelectedBeerKeg.name">
-  <label>Enter Price :</label>
-  <input [(ngModel)]="childSelectedBeerKeg.price">
-  <label>Enter Alcohol Content :</label>
-  <input [(ngModel)]="childSelectedBeerKeg.alcoholContent">
-  <button (click)="finishEditing()">Done</button>
+  <h2>{{childSelectedBeerKeg.name}}</h2>
+  <div class="main">
+    <div class="form">
+      <label>Name :</label>
+      <input [(ngModel)]="childSelectedBeerKeg.name">
+    </div>
+    <div class="form">
+      <label>Price :</label>
+      <input [(ngModel)]="childSelectedBeerKeg.price">
+    </div>
+    <div class="form">
+      <label>Alcohol Content :</label>
+      <input [(ngModel)]="childSelectedBeerKeg.alcoholContent">
+    </div>
+    <div class="form">
+      <label>Remaining pints :</label>
+      <input [(ngModel)]="childSelectedBeerKeg.capacity">
+    </div>
+    <div class="button">
+      <button (click)="finishEditing()">Done</button>
+    </div>
+  </div>
 </div>

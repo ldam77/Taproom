@@ -2,15 +2,21 @@
   font-size: 20px;
 }
 
+h1 {
+  color: #FFF;
+}
+
 button {
   margin-top: 1%;
   border-color: red;
   background-color: rgba(0,0,0,0.2);
-  padding: 0.5%;
-  font-size: 10px;
+  font-size: 2em;
+  color: #FFF;
 }
 
 input {
   margin: 1% 1% 1% 1%;
   border-color: red;
+  background-color: rgba(0,0,0,0.5);
+  color: #FFF;
 }

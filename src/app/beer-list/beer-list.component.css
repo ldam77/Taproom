@@ -2,6 +2,11 @@ li {
   list-style: none;
   font-family: monospace;
   font-size: 20px;
+  margin: 0.5%;
+  opacity: 0.8;
+  padding: 0.5%;
+  border-style: solid;
+  border-color: #f4af30;
 }
 
 button {
@@ -28,4 +33,21 @@ button {
 
 .expensive-beer{
   color: blue;
+}
+
+select {
+  margin-bottom: 1.5%;
+}
+
+.light {
+  background-color: #fce7bf;
+}
+
+.medium {
+  background-color: #f7cc7e;
+}
+
+.intense {
+  background-color: #f4af30;
+  border-color: #fce7bf;
 }

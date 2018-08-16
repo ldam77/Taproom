@@ -24,6 +24,7 @@ export class BeerListComponent {
     this.clickedGrowler.emit(currentBeer);
   }
 
+//Cheat-Way//
   largeGrowlerClicked(currentBeer: BeerKeg) {
     this.growlerClicked(currentBeer);
     this.growlerClicked(currentBeer);
@@ -31,9 +32,11 @@ export class BeerListComponent {
 
   alcoholContent(currentBeer:BeerKeg){
     if(currentBeer.alcoholContent<=5){
-      return "bg-success";
+      return "light";
+    } else if(currentBeer.alcoholContent <=7){
+      return "medium";
     } else {
-      return "bg-danger";
+      return "intense";
     }
   }
 
