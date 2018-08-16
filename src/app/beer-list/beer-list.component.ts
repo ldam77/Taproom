@@ -18,5 +18,11 @@ export class BeerListComponent {
   buyButtonClicked(currentBeer: BeerKeg) {
     this.clickedBuy.emit(currentBeer);
   }
+  lowKegLevel(currentBeer:BeerKeg){
+    if(currentBeer.capacity<10){
+      return "bg-danger";
+    }
+  }
+
 
 }
